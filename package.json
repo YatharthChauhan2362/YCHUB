@@ -1,15 +1,16 @@
 {
-  "name": "@arifszn/gitprofile",
+  "homepage": "https://YatharthChauhan2362.github.io/YCHUB",
+  "name": "@yatharth/gitprofile",
   "description": "Create an automatic portfolio based on GitHub profile",
   "version": "2.6.0",
   "license": "MIT",
-  "author": "arifszn",
+  "author": "yatharth",
   "repository": {
     "type": "git",
-    "url": "https://github.com/arifszn/gitprofile.git"
+    "url": "https://github.com/YatharthChauhan2362/gitprofile.git"
   },
   "bugs": {
-    "url": "https://github.com/arifszn/gitprofile/issues"
+    "url": "https://github.com/YatharthChauhan2362/gitprofile/issues"
   },
   "files": [
     "dist/gitprofile.es.js",
@@ -28,6 +29,8 @@
   },
   "typings": "./types/index.d.ts",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
@@ -52,6 +55,7 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.29.4",
+    "gh-pages": "^6.1.0",
     "postcss": "^8.4.12",
     "prettier": "^2.6.0",
     "prop-types": "^15.8.1",
